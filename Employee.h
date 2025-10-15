@@ -13,7 +13,7 @@ protected:
 
 // Methods
 public:
-	// TODO: Constructor
+	Employee(const std::string& name, int id, const std::string& type);
 
     virtual ~Employee() {}
 

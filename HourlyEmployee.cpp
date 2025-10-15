@@ -3,7 +3,15 @@
 HourlyEmployee::HourlyEmployee(const std::string& name, int id, 
                                 double payPerHour, double workedHours)
 {
-    // TODO: 
+    this->name = name;
+    this->id = id;
+
+    this->payPerHour = payPerHour;
+    this->workedHours = workedHours;
 }
-/*TODO: calculate Payment */
+
+HourlyEmployee:: double calculatePay() const override
+{
+    return workedHours*payPerHour;
+}
 
