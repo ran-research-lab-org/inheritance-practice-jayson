@@ -38,9 +38,11 @@ void readFile(const string& filename, vector<HourlyEmployee>& hourlyEmployees, v
 int main() {
     
     /* TODO: Define two vectors: HourlyEmployee and SalariedEmployee */
+    SalariedEmployee Prim("Pedro", 34567, 8500);
+    HourlyEmployee Seco("Juan", 13908, 90, 4);
 
     // TODO: Add vectors to readFile call, hourly first
-    readFile("employee_info.csv", , );
+    readFile("employee_info.csv", ,);
     double result = 0;
 
     // TODO: Print the results

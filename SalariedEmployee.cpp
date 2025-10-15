@@ -1,9 +1,15 @@
 #include "SalariedEmployee.h"
 
 SalariedEmployee::SalariedEmployee(const std::string& name, int id, double yearlyPayment)
-: {
-    // TODO: 
-}
-/*TODO: calculate Payment */
+{
+    this->name = name;
+    this->id = id;
 
-/* IMPLEMENT GETTERS*/
+    this->yearlyPayment = yearlyPayment;
+}
+
+
+SalariedEmployee::double calculatePay() const override
+{
+    return yearlyPayment/26
+}
